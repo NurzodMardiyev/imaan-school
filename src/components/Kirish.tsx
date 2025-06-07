@@ -1,8 +1,8 @@
 import { Form, Input } from "antd";
-import { useState } from "react";
 import "../App.css";
 import ill from "../assets/Learning-bro.png";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useUser } from "./Context"; // contextdan foydalanamiz
 
 export default function Kirish() {
   type HandleValue = {
@@ -10,25 +10,22 @@ export default function Kirish() {
     phone: string;
   };
 
-  const [formData, setFormData] = useState<HandleValue>({
-    name: "",
-    phone: "",
-  });
+  const { setUser } = useUser(); // userContext ga saqlash
+  const navigate = useNavigate();
 
   const handleLogin = (value: HandleValue) => {
     console.log("Formdan kelgan qiymatlar:", value);
-    setFormData(value); // Statega yozamiz
+    setUser(value); // Contextga yoziladi
+    navigate("/quiz"); // Keyingi sahifaga yo'naltiramiz
   };
 
   return (
     <div className="main-back min-h-screen flex items-center justify-center bg-gray-900 px-4">
       <div className="container flex flex-col md:flex-row items-center justify-center max-w-6xl gap-10 py-10">
-        {/* Rasm faqat md (>=768px) dan katta ekranlarda ko‘rinadi */}
         <div className="hidden md:flex login_img w-full md:w-1/2 justify-center">
           <img src={ill} alt="learning" className="max-w-sm w-full" />
         </div>
 
-        {/* Forma har doim ko‘rinadi */}
         <div className="login_input w-full md:w-1/2 flex justify-center">
           <Form
             onFinish={handleLogin}
@@ -62,14 +59,12 @@ export default function Kirish() {
             </Form.Item>
 
             <Form.Item>
-              <Link to="/quiz">
-                <button
-                  type="submit"
-                  className="bg-blue-600 w-full text-white py-2 px-6 rounded hover:bg-blue-700 transition-all"
-                >
-                  Kirish
-                </button>
-              </Link>
+              <button
+                type="submit"
+                className="bg-blue-600 w-full text-white py-2 px-6 rounded hover:bg-blue-700 transition-all"
+              >
+                Kirish
+              </button>
             </Form.Item>
           </Form>
         </div>
