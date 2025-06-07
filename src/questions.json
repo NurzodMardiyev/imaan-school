@@ -1,0 +1,442 @@
+[
+  {
+    "id": 1,
+    "question": "I ___ a student.",
+    "options": [
+      "is",
+      "are",
+      "am",
+      "be"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 2,
+    "question": "What ___ your name?",
+    "options": [
+      "is",
+      "are",
+      "do",
+      "have"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 3,
+    "question": "She ___ coffee every morning.",
+    "options": [
+      "drinks",
+      "drink",
+      "is drinking",
+      "drank"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 4,
+    "question": "We ___ at home now.",
+    "options": [
+      "was",
+      "are",
+      "is",
+      "be"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 5,
+    "question": "They ___ like pizza.",
+    "options": [
+      "don't",
+      "doesn't",
+      "aren't",
+      "didn't"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 6,
+    "question": "There ___ a book on the table.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "be"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 7,
+    "question": "I have ___ apples.",
+    "options": [
+      "some",
+      "any",
+      "much",
+      "an"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 8,
+    "question": "Can you ___ English?",
+    "options": [
+      "speak",
+      "to speak",
+      "spoke",
+      "speaking"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 9,
+    "question": "What time ___ you get up?",
+    "options": [
+      "are",
+      "do",
+      "does",
+      "did"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 10,
+    "question": "The opposite of \"cold\" is ___.",
+    "options": [
+      "wet",
+      "hot",
+      "warm",
+      "dry"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 11,
+    "question": "She ___ to school yesterday.",
+    "options": [
+      "go",
+      "going",
+      "went",
+      "goes"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 12,
+    "question": "I ___ never been to Italy.",
+    "options": [
+      "did",
+      "was",
+      "have",
+      "had"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 13,
+    "question": "He ___ TV when I called.",
+    "options": [
+      "watched",
+      "was watching",
+      "had watched",
+      "watching"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 14,
+    "question": "___ you ever eaten sushi?",
+    "options": [
+      "Have",
+      "Did",
+      "Do",
+      "Are"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 15,
+    "question": "We ___ in this city since 2010.",
+    "options": [
+      "live",
+      "lived",
+      "are living",
+      "have lived"
+    ],
+    "correctAnswerIndex": 3
+  },
+  {
+    "id": 16,
+    "question": "If it rains, we ___ go.",
+    "options": [
+      "don\u2019t",
+      "won\u2019t",
+      "didn\u2019t",
+      "wouldn\u2019t"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 17,
+    "question": "My brother is ___ than me.",
+    "options": [
+      "tall",
+      "taller",
+      "the tallest",
+      "most tall"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 18,
+    "question": "I\u2019m looking forward to ___ you.",
+    "options": [
+      "see",
+      "seeing",
+      "to see",
+      "saw"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 19,
+    "question": "We ___ finish the project before Friday.",
+    "options": [
+      "must",
+      "can",
+      "have to",
+      "should"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 20,
+    "question": "He works ___ than I do.",
+    "options": [
+      "hard",
+      "harder",
+      "hardly",
+      "the hardest"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 21,
+    "question": "The book ___ last week.",
+    "options": [
+      "publishes",
+      "was published",
+      "is publishing",
+      "has published"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 22,
+    "question": "If I ___ more money, I\u2019d buy a new car.",
+    "options": [
+      "had",
+      "have",
+      "would have",
+      "has"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 23,
+    "question": "She said she ___ busy.",
+    "options": [
+      "is",
+      "will be",
+      "was",
+      "has been"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 24,
+    "question": "I wish I ___ taller.",
+    "options": [
+      "was",
+      "were",
+      "am",
+      "be"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 25,
+    "question": "He\u2019s the man ___ helped me.",
+    "options": [
+      "what",
+      "which",
+      "who",
+      "where"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 26,
+    "question": "You should ___ your homework now.",
+    "options": [
+      "do",
+      "did",
+      "doing",
+      "done"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 27,
+    "question": "The car ___ belongs to my uncle.",
+    "options": [
+      "who",
+      "whose",
+      "which",
+      "what"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 28,
+    "question": "I\u2019ll call you when I ___ home.",
+    "options": [
+      "get",
+      "will get",
+      "got",
+      "gets"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 29,
+    "question": "I prefer tea ___ coffee.",
+    "options": [
+      "than",
+      "or",
+      "for",
+      "to"
+    ],
+    "correctAnswerIndex": 3
+  },
+  {
+    "id": 30,
+    "question": "Despite ___ tired, he went to the gym.",
+    "options": [
+      "be",
+      "to be",
+      "being",
+      "was"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 31,
+    "question": "My flight was ___, so I arrived late.",
+    "options": [
+      "cancelled",
+      "cancel",
+      "cancellation",
+      "canceling"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 32,
+    "question": "I don\u2019t have ___ money.",
+    "options": [
+      "much",
+      "many",
+      "a lot",
+      "some"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 33,
+    "question": "She has a good sense of ___.",
+    "options": [
+      "mood",
+      "humor",
+      "emotion",
+      "joke"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 34,
+    "question": "You need a ___ to enter the building.",
+    "options": [
+      "permission",
+      "pass",
+      "paper",
+      "bill"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 35,
+    "question": "I\u2019m very ___ with my test results.",
+    "options": [
+      "satisfying",
+      "satisfied",
+      "satisfy",
+      "satisfaction"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 36,
+    "question": "What\u2019s the ___ between \u201cmake\u201d and \u201cdo\u201d?",
+    "options": [
+      "same",
+      "different",
+      "difference",
+      "changing"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 37,
+    "question": "That was a very ___ movie.",
+    "options": [
+      "bored",
+      "boring",
+      "bore",
+      "boredom"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 38,
+    "question": "This exercise is too ___. I can\u2019t do it.",
+    "options": [
+      "difficulty",
+      "difficult",
+      "differ",
+      "difference"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 39,
+    "question": "She\u2019s very good ___ languages.",
+    "options": [
+      "on",
+      "for",
+      "in",
+      "at"
+    ],
+    "correctAnswerIndex": 3
+  },
+  {
+    "id": 40,
+    "question": "My phone is out of ___. I need to charge it.",
+    "options": [
+      "battery",
+      "signal",
+      "power",
+      "screen"
+    ],
+    "correctAnswerIndex": 0
+  }
+]

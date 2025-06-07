@@ -1,0 +1,17 @@
+.main-back {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00e1ff;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: #001034;
+  border-radius: 10px;
+  padding: 20px 40px;
+  color: #fff;
+}
