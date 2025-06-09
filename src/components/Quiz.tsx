@@ -153,7 +153,7 @@ export default function Quiz() {
             {currentIndex + 1}. {current.question}
           </span>
           <span className="text-[#00E1FF] text-lg font-bold">
-            {formatTime(globalTimeLeft)}s
+            {formatTime(globalTimeLeft)}
           </span>
         </h3>
 
