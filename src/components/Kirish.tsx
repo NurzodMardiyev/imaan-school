@@ -1,8 +1,9 @@
 import { Form, Input } from "antd";
 import "../App.css";
 import ill from "../assets/Learning-bro.png";
+import logo from "../assets/Imaan logo.svg"; // logotip
 import { useNavigate } from "react-router-dom";
-import { useUser } from "./Context"; // contextdan foydalanamiz
+import { useUser } from "./Context";
 
 export default function Kirish() {
   type HandleValue = {
@@ -10,23 +11,37 @@ export default function Kirish() {
     phone: string;
   };
 
-  const { setUser } = useUser(); // userContext ga saqlash
+  const { setUser } = useUser();
   const navigate = useNavigate();
 
   const handleLogin = (value: HandleValue) => {
-    console.log("Formdan kelgan qiymatlar:", value);
-    setUser(value); // Contextga yoziladi
-    navigate("/quiz"); // Keyingi sahifaga yo'naltiramiz
+    setUser(value);
+    navigate("/quiz");
   };
 
   return (
     <div className="main-back min-h-screen flex items-center justify-center bg-gray-900 px-4">
       <div className="container flex flex-col md:flex-row items-center justify-center max-w-6xl gap-10 py-10">
-        <div className="hidden md:flex login_img w-full md:w-1/2 justify-center">
+        {/* Chap rasm */}
+        <div className="hidden md:flex w-full md:w-1/2 justify-center">
           <img src={ill} alt="learning" className="max-w-sm w-full" />
         </div>
 
-        <div className="login_input w-full md:w-1/2 flex justify-center">
+        {/* O'ng forma */}
+        <div className="w-full md:w-1/2 flex flex-col items-center">
+          {/* Logo + Title */}
+          <div className="flex flex-col items-center mb-6">
+            <img
+              src={logo}
+              alt="Imaan School logo"
+              className="w-16 h-16 md:w-26 md:h-26"
+            />
+            <h1 className="text-2xl md:text-3xl font-bold text-white mt-0 tracking-wider">
+              Imaan School
+            </h1>
+          </div>
+
+          {/* Form */}
           <Form
             onFinish={handleLogin}
             layout="vertical"
@@ -61,7 +76,7 @@ export default function Kirish() {
             <Form.Item>
               <button
                 type="submit"
-                className="bg-blue-600 w-full text-white py-2 px-6 rounded hover:bg-blue-700 transition-all"
+                className="bg-[#00E1FF] w-full text-black font-semibold py-2 px-6 rounded hover:opacity-90 transition-all"
               >
                 Kirish
               </button>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import questionsData from "../questions.json"; // ← yo‘ling to‘g‘ri bo‘lsin
 import { useUser } from "./Context";
+import { sendToTelegram } from "../sentTelegram/sendToTelegram";
 
 type Question = {
   id: number;
@@ -24,8 +25,10 @@ export default function Quiz() {
   >([]);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
+  const [hasSentResult, setHasSentResult] = useState(false);
 
   const [timeLeft, setTimeLeft] = useState(15);
+
   const { user } = useUser();
 
   // Shuffle variantlar
@@ -46,6 +49,18 @@ export default function Quiz() {
     });
     setShuffledQuestions(shuffled);
   }, []);
+
+  useEffect(() => {
+    console.log(score);
+    if (user && showResult && !hasSentResult) {
+      sendToTelegram({
+        name: user.name,
+        phone: user.phone,
+        score: score,
+      });
+      setHasSentResult(true);
+    }
+  }, [user, showResult, hasSentResult, score]);
 
   useEffect(() => {
     if (showResult || shuffledQuestions.length === 0) return;
