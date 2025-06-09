@@ -106,7 +106,7 @@ export default function Kirish() {
               <MaskedInput
                 mask={phoneMask}
                 placeholder="+998 (__) ___-__-__"
-                className="bg-white text-black ant-input css-dev-only-do-not-override-mc1tut ant-input-outlined "
+                className="bg-white text-black ant-inputme  ant-input-outlinedme "
               />
             </Form.Item>
 
