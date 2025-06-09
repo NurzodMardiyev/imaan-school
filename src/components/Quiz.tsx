@@ -67,7 +67,7 @@ export default function Quiz() {
   }, []);
 
   useEffect(() => {
-    console.log(score);
+    // console.log(score);
     const level = getLevel(score);
     if (user && showResult && !hasSentResult) {
       sendToTelegram({
