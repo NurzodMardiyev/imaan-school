@@ -4,6 +4,7 @@ import ill from "../assets/Learning-bro.png";
 import logo from "../assets/Imaan logo.svg"; // logotip
 import { useNavigate } from "react-router-dom";
 import { useUser } from "./Context";
+import MaskedInput from "react-text-mask";
 
 export default function Kirish() {
   const [messageApi, contextHolder] = message.useMessage();
@@ -24,10 +25,33 @@ export default function Kirish() {
   const navigate = useNavigate();
 
   const handleLogin = (value: HandleValue) => {
-    setUser(value);
+    const maskPhone = "+" + value.phone.replace(/\D/g, "");
+    setUser({ ...value, phone: maskPhone });
     success();
     navigate("/quiz");
   };
+
+  const phoneMask = [
+    "+",
+    "9",
+    "9",
+    "8",
+    " ",
+    "(",
+    /[1-9]/,
+    /\d/,
+    ")",
+    " ",
+    /\d/,
+    /\d/,
+    /\d/,
+    "-",
+    /\d/,
+    /\d/,
+    "-",
+    /\d/,
+    /\d/,
+  ];
 
   return (
     <div className="main-back min-h-screen flex items-center justify-center bg-gray-900 px-4">
@@ -79,9 +103,10 @@ export default function Kirish() {
                 { required: true, message: "Telefon raqamingizni kiriting!" },
               ]}
             >
-              <Input
-                placeholder="+998 90 123 45 67"
-                className="bg-white text-black"
+              <MaskedInput
+                mask={phoneMask}
+                placeholder="+998 (__) ___-__-__"
+                className="bg-white text-black ant-input css-dev-only-do-not-override-mc1tut ant-input-outlined "
               />
             </Form.Item>
 
