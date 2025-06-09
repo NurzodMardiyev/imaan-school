@@ -1,4 +1,4 @@
-import { Form, Input } from "antd";
+import { Form, Input, message } from "antd";
 import "../App.css";
 import ill from "../assets/Learning-bro.png";
 import logo from "../assets/Imaan logo.svg"; // logotip
@@ -6,6 +6,15 @@ import { useNavigate } from "react-router-dom";
 import { useUser } from "./Context";
 
 export default function Kirish() {
+  const [messageApi, contextHolder] = message.useMessage();
+
+  const success = () => {
+    messageApi.open({
+      type: "success",
+      content: "This is a success message",
+    });
+  };
+
   type HandleValue = {
     name: string;
     phone: string;
@@ -16,6 +25,7 @@ export default function Kirish() {
 
   const handleLogin = (value: HandleValue) => {
     setUser(value);
+    success();
     navigate("/quiz");
   };
 
@@ -26,6 +36,8 @@ export default function Kirish() {
         <div className="hidden md:flex w-full md:w-1/2 justify-center">
           <img src={ill} alt="learning" className="max-w-sm w-full" />
         </div>
+
+        {contextHolder}
 
         {/* O'ng forma */}
         <div className="w-full md:w-1/2 flex flex-col items-center">

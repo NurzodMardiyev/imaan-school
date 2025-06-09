@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import questionsData from "../questions.json"; // ← yo‘ling to‘g‘ri bo‘lsin
 import { useUser } from "./Context";
 import { sendToTelegram } from "../sentTelegram/sendToTelegram";
+import { useNavigate } from "react-router-dom";
 
 type Question = {
   id: number;
@@ -30,6 +31,13 @@ export default function Quiz() {
   const [timeLeft, setTimeLeft] = useState(15);
 
   const { user } = useUser();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!user) {
+      navigate("/");
+    }
+  }, [user]);
 
   // Shuffle variantlar
   useEffect(() => {
