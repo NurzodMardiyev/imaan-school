@@ -3,6 +3,7 @@ import questionsData from "../questions.json"; // ← yo‘ling to‘g‘ri bo�
 import { useUser } from "./Context";
 import { sendToTelegram } from "../sentTelegram/sendToTelegram";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/Imaan logo.svg";
 
 type Question = {
   id: number;
@@ -147,7 +148,13 @@ export default function Quiz() {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#001033] px-4">
-      <div className="w-full md:w-[80%] bg-[#001033] text-white p-6 rounded space-y-4">
+      <div className="w-full md:w-[80%] bg-[#001033] text-white p-6 rounded space-y-4 relative">
+        <div className="flex justify-between  absolute top-[-160px]">
+          <div>
+            <img src={logo} alt="" className="w-24" />
+          </div>
+          <div></div>
+        </div>
         <h3 className="text-xl font-semibold flex justify-between items-center">
           <span>
             {currentIndex + 1}. {current.question}
@@ -175,14 +182,9 @@ export default function Quiz() {
         </ul>
 
         <button
-          disabled={!selectedAnswer}
           onClick={handleNext}
           className={`mt-4 px-6 py-2 rounded-md transition-all font-semibold
-            ${
-              selectedAnswer
-                ? "bg-[#00E1FF] text-black hover:opacity-90"
-                : "bg-gray-500 text-white cursor-not-allowed"
-            }`}
+           bg-[#00E1FF] text-black hover:opacity-90`}
         >
           Keyingi savol →
         </button>
