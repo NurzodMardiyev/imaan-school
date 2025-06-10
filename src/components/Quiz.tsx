@@ -149,11 +149,15 @@ export default function Quiz() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#001033] px-4">
       <div className="w-full md:w-[80%] bg-[#001033] text-white p-6 rounded space-y-4 relative">
-        <div className="flex justify-between  absolute top-[-160px]">
-          <div>
-            <img src={logo} alt="" className="w-24" />
+        <div className="flex md:justify-between justify-center md:absolute md:top-[-160px] top-[-60px] ">
+          <div className="flex mx-auto w-full justify-center">
+            <img
+              src={logo}
+              alt=""
+              className="w-32 md:w-40 flex mb-[30px] md:mb-auto"
+            />
           </div>
-          <div></div>
+          <div className="hidden md:flex"></div>
         </div>
         <h3 className="text-xl font-semibold flex justify-between items-center">
           <span>
