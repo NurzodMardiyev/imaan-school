@@ -4,9 +4,10 @@ type SendToTelegramParams = {
   phone: string;
   score: number;
   level: string
+  feedback: string
 };
 
-export const sendToTelegram = async ({ name, phone, score,level }: SendToTelegramParams) => {
+export const sendToTelegram = async ({ name, phone, score,level, feedback }: SendToTelegramParams) => {
   const token = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
   const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID;
 
@@ -23,6 +24,7 @@ export const sendToTelegram = async ({ name, phone, score,level }: SendToTelegra
 📞 Tel: ${phone}
 ✅ Ball: ${score}
 🎯 Daraja: ${level}
+📝 40 ta savol bo‘yicha natija:\n${feedback}
 `;
 
   try {

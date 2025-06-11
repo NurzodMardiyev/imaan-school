@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import questionsData from "../questions.json"; // ← yo‘ling to‘g‘ri bo‘lsin
+import questionsData from "../questions.json";
 import { useUser } from "./Context";
 import { sendToTelegram } from "../sentTelegram/sendToTelegram";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/Imaan logo.svg";
 
+// Tiplar
 type Question = {
   id: number;
   question: string;
@@ -19,6 +20,13 @@ type ShuffledQuestion = {
   correctAnswer: string;
 };
 
+type AnswerFeedback = {
+  question: string;
+  selectedAnswer: string;
+  correctAnswer: string;
+  isCorrect: boolean;
+};
+
 export default function Quiz() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -28,8 +36,8 @@ export default function Quiz() {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showResult, setShowResult] = useState(false);
   const [hasSentResult, setHasSentResult] = useState(false);
-
   const [globalTimeLeft, setGlobalTimeLeft] = useState(25 * 60);
+  const [answerFeedback, setAnswerFeedback] = useState<AnswerFeedback[]>([]);
 
   const { user } = useUser();
   const navigate = useNavigate();
@@ -48,38 +56,49 @@ export default function Quiz() {
     }
   }, [user]);
 
-  // Shuffle variantlar
   useEffect(() => {
-    const shuffled = questionsData.map((q: Question) => {
-      const options = [...q.options];
-      const correct = options[q.correctAnswerIndex];
-      for (let i = options.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [options[i], options[j]] = [options[j], options[i]];
-      }
-      return {
-        id: q.id,
-        question: q.question,
-        options,
-        correctAnswer: correct,
-      };
-    });
-    setShuffledQuestions(shuffled);
+    // Tasodifiy 40ta savolni tanlab olish
+    const selected = [...questionsData]
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 40)
+      .map((q: Question) => {
+        const options = [...q.options];
+        const correct = options[q.correctAnswerIndex];
+        for (let i = options.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [options[i], options[j]] = [options[j], options[i]];
+        }
+        return {
+          id: q.id,
+          question: q.question,
+          options,
+          correctAnswer: correct,
+        };
+      });
+    setShuffledQuestions(selected);
   }, []);
 
   useEffect(() => {
-    // console.log(score);
     const level = getLevel(score);
     if (user && showResult && !hasSentResult) {
+      const feedbackText = answerFeedback
+        .map((f, index) => {
+          return `${index + 1}. ${f.question}\nTanlandi: ${
+            f.selectedAnswer
+          }\nTo‘g‘ri javob: ${f.correctAnswer} → ${f.isCorrect ? "✅" : "❌"}`;
+        })
+        .join("\n\n");
+
       sendToTelegram({
         name: user.name,
         phone: user.phone,
         score: score,
         level: level,
+        feedback: feedbackText,
       });
       setHasSentResult(true);
     }
-  }, [user, showResult, hasSentResult, score]);
+  }, [user, showResult, hasSentResult, score, answerFeedback]);
 
   useEffect(() => {
     if (showResult) return;
@@ -88,7 +107,7 @@ export default function Quiz() {
       setGlobalTimeLeft((prev) => {
         if (prev === 1) {
           clearInterval(globalTimer);
-          setShowResult(true); // vaqt tugadi – testni yopamiz
+          setShowResult(true);
           return 0;
         }
         return prev - 1;
@@ -107,14 +126,23 @@ export default function Quiz() {
   }
 
   const handleOptionClick = (option: string) => {
-    setSelectedAnswer(option); // faqat tanlaymiz, tekshirish emas
+    setSelectedAnswer(option);
   };
 
   const handleNext = () => {
     const current = shuffledQuestions[currentIndex];
-    if (selectedAnswer === current.correctAnswer) {
-      setScore((prev) => prev + 1);
-    }
+    const isCorrect = selectedAnswer === current.correctAnswer;
+    if (isCorrect) setScore((prev) => prev + 1);
+
+    setAnswerFeedback((prev) => [
+      ...prev,
+      {
+        question: current.question,
+        selectedAnswer: selectedAnswer || "Tanlanmadi",
+        correctAnswer: current.correctAnswer,
+        isCorrect: isCorrect,
+      },
+    ]);
 
     if (currentIndex + 1 < shuffledQuestions.length) {
       setCurrentIndex((prev) => prev + 1);
@@ -157,13 +185,13 @@ export default function Quiz() {
               className="w-32 md:w-40 flex mb-[30px] md:mb-auto"
             />
           </div>
-          <div className="hidden md:flex"></div>
         </div>
+
         <h3 className="text-xl font-semibold flex justify-between items-center">
           <span>
             {currentIndex + 1}. {current.question}
           </span>
-          <span className="text-[#00E1FF] text-lg font-bold">
+          <span className="text-[#ff0000] md:text-xl text-lg font-bold">
             {formatTime(globalTimeLeft)}
           </span>
         </h3>
@@ -174,11 +202,11 @@ export default function Quiz() {
               key={option}
               onClick={() => handleOptionClick(option)}
               className={`cursor-pointer px-4 py-2 border rounded-md transition-all
-              ${
-                selectedAnswer === option
-                  ? "bg-[#00E1FF] text-black font-semibold"
-                  : "bg-white text-black bg-opacity-10 hover:bg-opacity-20"
-              }`}
+                ${
+                  selectedAnswer === option
+                    ? "bg-[#00E1FF] text-black font-semibold"
+                    : "bg-white text-black bg-opacity-10 hover:bg-opacity-20"
+                }`}
             >
               {option}
             </li>
@@ -188,7 +216,7 @@ export default function Quiz() {
         <button
           onClick={handleNext}
           className={`mt-4 px-6 py-2 rounded-md transition-all font-semibold
-           bg-[#00E1FF] text-black hover:opacity-90`}
+            bg-[#00E1FF] text-black hover:opacity-90 disabled:opacity-50`}
         >
           Keyingi savol →
         </button>
