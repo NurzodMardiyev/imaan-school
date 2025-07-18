@@ -1,442 +1,549 @@
 [
   {
     "id": 1,
-    "question": "I ___ a student.",
+    "question": "What ___ your name?",
     "options": [
       "is",
       "are",
       "am",
       "be"
     ],
-    "correctAnswerIndex": 2
+    "correctAnswerIndex": 0
   },
   {
     "id": 2,
-    "question": "What ___ your name?",
+    "question": "She ___ to school every day.",
     "options": [
-      "is",
-      "are",
-      "do",
-      "have"
+      "go",
+      "goes",
+      "going",
+      "is go"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "id": 3,
-    "question": "She ___ coffee every morning.",
+    "question": "I ___ a student last year.",
     "options": [
-      "drinks",
-      "drink",
-      "is drinking",
-      "drank"
+      "am",
+      "was",
+      "were",
+      "is"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "id": 4,
-    "question": "We ___ at home now.",
+    "question": "They ___ in the park when it started to rain.",
     "options": [
-      "was",
-      "are",
-      "is",
-      "be"
+      "played",
+      "were playing",
+      "are playing",
+      "play"
     ],
     "correctAnswerIndex": 1
   },
   {
     "id": 5,
-    "question": "They ___ like pizza.",
+    "question": "If I ___ you, I would study harder.",
     "options": [
-      "don't",
-      "doesn't",
-      "aren't",
-      "didn't"
-    ],
-    "correctAnswerIndex": 0
-  },
-  {
-    "id": 6,
-    "question": "There ___ a book on the table.",
-    "options": [
-      "is",
-      "are",
+      "am",
+      "was",
       "were",
       "be"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 6,
+    "question": "This is ___ book I have ever read.",
+    "options": [
+      "good",
+      "better",
+      "the best",
+      "best"
+    ],
+    "correctAnswerIndex": 2
   },
   {
     "id": 7,
-    "question": "I have ___ apples.",
+    "question": "She ___ her homework yet.",
     "options": [
-      "some",
-      "any",
-      "much",
-      "an"
+      "hasn’t done",
+      "didn’t do",
+      "doesn’t do",
+      "isn’t doing"
     ],
     "correctAnswerIndex": 0
   },
   {
     "id": 8,
-    "question": "Can you ___ English?",
+    "question": "I ___ to the party if I finish my work on time.",
     "options": [
-      "speak",
-      "to speak",
-      "spoke",
-      "speaking"
+      "go",
+      "will go",
+      "went",
+      "going"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "id": 9,
-    "question": "What time ___ you get up?",
+    "question": "The teacher asked us ___ quiet.",
     "options": [
-      "are",
-      "do",
-      "does",
-      "did"
+      "be",
+      "to be",
+      "being",
+      "are"
     ],
     "correctAnswerIndex": 1
   },
   {
     "id": 10,
-    "question": "The opposite of \"cold\" is ___.",
+    "question": "By the time we arrived, the movie ___.",
     "options": [
-      "wet",
-      "hot",
-      "warm",
-      "dry"
+      "starts",
+      "started",
+      "had started",
+      "was starting"
     ],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 2
   },
   {
     "id": 11,
-    "question": "She ___ to school yesterday.",
+    "question": "I don’t mind ___ early in the morning.",
     "options": [
-      "go",
-      "going",
-      "went",
-      "goes"
+      "wake up",
+      "to wake up",
+      "waking up",
+      "woke up"
     ],
     "correctAnswerIndex": 2
   },
   {
     "id": 12,
-    "question": "I ___ never been to Italy.",
+    "question": "There isn’t ___ milk in the fridge.",
     "options": [
-      "did",
-      "was",
-      "have",
-      "had"
+      "some",
+      "any",
+      "many",
+      "much"
     ],
-    "correctAnswerIndex": 2
+    "correctAnswerIndex": 1
   },
   {
     "id": 13,
-    "question": "He ___ TV when I called.",
+    "question": "This book ___ to me by my friend.",
     "options": [
-      "watched",
-      "was watching",
-      "had watched",
-      "watching"
+      "gave",
+      "was given",
+      "has given",
+      "gives"
     ],
     "correctAnswerIndex": 1
   },
   {
     "id": 14,
-    "question": "___ you ever eaten sushi?",
+    "question": "You ___ smoke here; it’s prohibited.",
     "options": [
-      "Have",
-      "Did",
-      "Do",
-      "Are"
+      "mustn’t",
+      "don’t have to",
+      "shouldn’t",
+      "can’t"
     ],
     "correctAnswerIndex": 0
   },
   {
     "id": 15,
-    "question": "We ___ in this city since 2010.",
+    "question": "I wish I ___ speak English fluently.",
     "options": [
-      "live",
-      "lived",
-      "are living",
-      "have lived"
-    ],
-    "correctAnswerIndex": 3
-  },
-  {
-    "id": 16,
-    "question": "If it rains, we ___ go.",
-    "options": [
-      "don\u2019t",
-      "won\u2019t",
-      "didn\u2019t",
-      "wouldn\u2019t"
+      "can",
+      "could",
+      "will",
+      "would"
     ],
     "correctAnswerIndex": 1
   },
   {
-    "id": 17,
-    "question": "My brother is ___ than me.",
+    "id": 16,
+    "question": "The room ___ cleaned every day.",
     "options": [
-      "tall",
-      "taller",
-      "the tallest",
-      "most tall"
+      "is",
+      "was",
+      "has",
+      "are"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 17,
+    "question": "She asked me where ___.",
+    "options": [
+      "do I live",
+      "I lived",
+      "did I live",
+      "I live"
     ],
     "correctAnswerIndex": 1
   },
   {
     "id": 18,
-    "question": "I\u2019m looking forward to ___ you.",
+    "question": "I ___ to the gym three times a week.",
     "options": [
-      "see",
-      "seeing",
-      "to see",
-      "saw"
+      "go",
+      "am going",
+      "have gone",
+      "going"
     ],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 0
   },
   {
     "id": 19,
-    "question": "We ___ finish the project before Friday.",
+    "question": "If he ___ earlier, he wouldn’t have missed the bus.",
     "options": [
-      "must",
-      "can",
-      "have to",
-      "should"
-    ],
-    "correctAnswerIndex": 2
-  },
-  {
-    "id": 20,
-    "question": "He works ___ than I do.",
-    "options": [
-      "hard",
-      "harder",
-      "hardly",
-      "the hardest"
+      "left",
+      "had left",
+      "leaves",
+      "has left"
     ],
     "correctAnswerIndex": 1
   },
   {
-    "id": 21,
-    "question": "The book ___ last week.",
+    "id": 20,
+    "question": "The more you practice, ___ you will become.",
     "options": [
-      "publishes",
-      "was published",
-      "is publishing",
-      "has published"
+      "the better",
+      "better",
+      "the best",
+      "good"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 21,
+    "question": "I’m very ___ because I passed my exam!",
+    "options": [
+      "angry",
+      "happy",
+      "tired",
+      "bored"
     ],
     "correctAnswerIndex": 1
   },
   {
     "id": 22,
-    "question": "If I ___ more money, I\u2019d buy a new car.",
+    "question": "Can you ___ the TV? It’s too loud.",
     "options": [
-      "had",
-      "have",
-      "would have",
-      "has"
+      "turn on",
+      "turn off",
+      "turn up",
+      "turn down"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "id": 23,
-    "question": "She said she ___ busy.",
+    "question": "The opposite of “big” is ___.",
     "options": [
-      "is",
-      "will be",
-      "was",
-      "has been"
+      "large",
+      "small",
+      "tall",
+      "high"
     ],
-    "correctAnswerIndex": 2
+    "correctAnswerIndex": 1
   },
   {
     "id": 24,
-    "question": "I wish I ___ taller.",
+    "question": "I need to ___ a phone call to my friend.",
     "options": [
-      "was",
-      "were",
-      "am",
-      "be"
+      "do",
+      "make",
+      "take",
+      "give"
     ],
     "correctAnswerIndex": 1
   },
   {
     "id": 25,
-    "question": "He\u2019s the man ___ helped me.",
+    "question": "This restaurant is very ___; we should book a table.",
     "options": [
-      "what",
-      "which",
-      "who",
-      "where"
+      "quiet",
+      "noisy",
+      "popular",
+      "empty"
     ],
     "correctAnswerIndex": 2
   },
   {
     "id": 26,
-    "question": "You should ___ your homework now.",
+    "question": "She is very ___ about her new job.",
     "options": [
-      "do",
-      "did",
-      "doing",
-      "done"
+      "excited",
+      "exciting",
+      "excite",
+      "excitement"
     ],
     "correctAnswerIndex": 0
   },
   {
     "id": 27,
-    "question": "The car ___ belongs to my uncle.",
+    "question": "I’m looking for my keys. Have you ___ them?",
     "options": [
-      "who",
-      "whose",
-      "which",
-      "what"
+      "seen",
+      "saw",
+      "see",
+      "seeing"
     ],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 0
   },
   {
     "id": 28,
-    "question": "I\u2019ll call you when I ___ home.",
+    "question": "The meeting was ___ because the manager was sick.",
     "options": [
-      "get",
-      "will get",
-      "got",
-      "gets"
+      "canceled",
+      "delayed",
+      "finished",
+      "started"
     ],
     "correctAnswerIndex": 0
   },
   {
     "id": 29,
-    "question": "I prefer tea ___ coffee.",
+    "question": "This book is so ___ that I can’t stop reading it.",
     "options": [
-      "than",
-      "or",
-      "for",
-      "to"
+      "boring",
+      "interesting",
+      "difficult",
+      "easy"
     ],
-    "correctAnswerIndex": 3
+    "correctAnswerIndex": 1
   },
   {
     "id": 30,
-    "question": "Despite ___ tired, he went to the gym.",
+    "question": "He speaks English very ___.",
     "options": [
-      "be",
-      "to be",
-      "being",
-      "was"
+      "good",
+      "well",
+      "better",
+      "best"
     ],
-    "correctAnswerIndex": 2
+    "correctAnswerIndex": 1
   },
   {
     "id": 31,
-    "question": "My flight was ___, so I arrived late.",
+    "question": "I’m feeling a bit ___; I think I need to see a doctor.",
     "options": [
-      "cancelled",
-      "cancel",
-      "cancellation",
-      "canceling"
+      "healthy",
+      "sick",
+      "strong",
+      "happy"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "id": 32,
-    "question": "I don\u2019t have ___ money.",
+    "question": "Can you ___ me some money until tomorrow?",
     "options": [
-      "much",
-      "many",
-      "a lot",
-      "some"
+      "lend",
+      "borrow",
+      "give",
+      "take"
     ],
     "correctAnswerIndex": 0
   },
   {
     "id": 33,
-    "question": "She has a good sense of ___.",
+    "question": "This task is very ___; I need more time to complete it.",
     "options": [
-      "mood",
-      "humor",
-      "emotion",
-      "joke"
+      "easy",
+      "simple",
+      "challenging",
+      "fun"
     ],
-    "correctAnswerIndex": 1
+    "correctAnswerIndex": 2
   },
   {
     "id": 34,
-    "question": "You need a ___ to enter the building.",
+    "question": "The ___ of the company made an important announcement.",
     "options": [
-      "permission",
-      "pass",
-      "paper",
-      "bill"
+      "teacher",
+      "director",
+      "student",
+      "worker"
     ],
     "correctAnswerIndex": 1
   },
   {
     "id": 35,
-    "question": "I\u2019m very ___ with my test results.",
+    "question": "I’m not sure, but I think we should ___ the instructions again.",
     "options": [
-      "satisfying",
-      "satisfied",
-      "satisfy",
-      "satisfaction"
+      "check",
+      "ignore",
+      "forget",
+      "write"
+    ],
+    "correctAnswerIndex": 0
+  },
+  {
+    "id": 36,
+    "question": " Anna is a 20-year-old student from Tashkent. She studies English at a local university and dreams of becoming a translator. Every morning, she wakes up at 7 a.m., has breakfast, and takes a bus to her classes. In her free time, she enjoys reading books and watching English movies to improve her language skills. Last summer, she traveled to London with her family and visited many famous places, like Big Ben and the British Museum. She hopes to return one day to study abroad. \n\n Where is Anna from?",
+    "options": [
+      "London",
+      "Tashkent",
+      "Samarkand",
+      "Bukhara"
     ],
     "correctAnswerIndex": 1
   },
   {
-    "id": 36,
-    "question": "What\u2019s the ___ between \u201cmake\u201d and \u201cdo\u201d?",
+    "id": 37,
+    "question": "Anna is a 20-year-old student from Tashkent. She studies English at a local university and dreams of becoming a translator. Every morning, she wakes up at 7 a.m., has breakfast, and takes a bus to her classes. In her free time, she enjoys reading books and watching English movies to improve her language skills. Last summer, she traveled to London with her family and visited many famous places, like Big Ben and the British Museum. She hopes to return one day to study abroad. \n\n What does Anna want to become?",
     "options": [
-      "same",
-      "different",
-      "difference",
-      "changing"
+      "A teacher",
+      "A doctor",
+      "A translator",
+      "A writer"
     ],
     "correctAnswerIndex": 2
   },
   {
-    "id": 37,
-    "question": "That was a very ___ movie.",
-    "options": [
-      "bored",
-      "boring",
-      "bore",
-      "boredom"
-    ],
-    "correctAnswerIndex": 1
-  },
-  {
     "id": 38,
-    "question": "This exercise is too ___. I can\u2019t do it.",
+    "question": "Anna is a 20-year-old student from Tashkent. She studies English at a local university and dreams of becoming a translator. Every morning, she wakes up at 7 a.m., has breakfast, and takes a bus to her classes. In her free time, she enjoys reading books and watching English movies to improve her language skills. Last summer, she traveled to London with her family and visited many famous places, like Big Ben and the British Museum. She hopes to return one day to study abroad. \n\n How does Anna get to her classes?",
     "options": [
-      "difficulty",
-      "difficult",
-      "differ",
-      "difference"
+      "By car",
+      "By bus",
+      "By train",
+      "By walking"
     ],
-    "correctAnswerIndex": 1
-  },
+    "correctAnswerIndex": 1  },
   {
     "id": 39,
-    "question": "She\u2019s very good ___ languages.",
+    "question": "Anna is a 20-year-old student from Tashkent. She studies English at a local university and dreams of becoming a translator. Every morning, she wakes up at 7 a.m., has breakfast, and takes a bus to her classes. In her free time, she enjoys reading books and watching English movies to improve her language skills. Last summer, she traveled to London with her family and visited many famous places, like Big Ben and the British Museum. She hopes to return one day to study abroad. \n\n What does Anna do in her free time?",
     "options": [
-      "on",
-      "for",
-      "in",
-      "at"
+      "Plays sports",
+      "Reads books and watches movies",
+      "Cooks food",
+      "Travels abroad"
     ],
-    "correctAnswerIndex": 3
-  },
+    "correctAnswerIndex": 1  },
   {
     "id": 40,
-    "question": "My phone is out of ___. I need to charge it.",
+    "question": "Anna is a 20-year-old student from Tashkent. She studies English at a local university and dreams of becoming a translator. Every morning, she wakes up at 7 a.m., has breakfast, and takes a bus to her classes. In her free time, she enjoys reading books and watching English movies to improve her language skills. Last summer, she traveled to London with her family and visited many famous places, like Big Ben and the British Museum. She hopes to return one day to study abroad. \n\n Where did Anna travel last summer?",
     "options": [
-      "battery",
-      "signal",
-      "power",
-      "screen"
+      "Paris",
+      "London",
+      "New York",
+      "Dubai"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1  },
+  {
+    "id": 41,
+    "question": "Learn English at Sunshine Language School! \n\n Join our friendly classes and improve your English quickly. We offer courses for all levels: beginner, intermediate, and advanced. Classes are held three times a week in the evening. Our experienced teachers use modern methods to make learning fun. Sign up before July 15th and get a 10% discount! For more information, visit our website or call us at (123) 456-7890. \n\n What is the name of the language school?",
+    "options": [
+      "Bright Future School",
+      "Sunshine Language School",
+      "English World Academy",
+      "Global Learning Center"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 42,
+    "question": "Learn English at Sunshine Language School! \n\n Join our friendly classes and improve your English quickly. We offer courses for all levels: beginner, intermediate, and advanced. Classes are held three times a week in the evening. Our experienced teachers use modern methods to make learning fun. Sign up before July 15th and get a 10% discount! For more information, visit our website or call us at (123) 456-7890. \n\n How often are the classes held?",
+    "options": [
+      "Every day",
+      "Twice a week",
+      "Three times a week",
+      "Once a week"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 43,
+    "question": "Learn English at Sunshine Language School! \n\n Join our friendly classes and improve your English quickly. We offer courses for all levels: beginner, intermediate, and advanced. Classes are held three times a week in the evening. Our experienced teachers use modern methods to make learning fun. Sign up before July 15th and get a 10% discount! For more information, visit our website or call us at (123) 456-7890. \n\n What do you get if you sign up before July 15th?",
+    "options": [
+      "Free books",
+      "A 10% discount",
+      "A free class",
+      "A certificate"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 44,
+    "question": "Learn English at Sunshine Language School! \n\n Join our friendly classes and improve your English quickly. We offer courses for all levels: beginner, intermediate, and advanced. Classes are held three times a week in the evening. Our experienced teachers use modern methods to make learning fun. Sign up before July 15th and get a 10% discount! For more information, visit our website or call us at (123) 456-7890. \n\n What kind of teachers does the school have?",
+    "options": [
+      "New teachers",
+      "Experienced teachers",
+      "Part-time teachers",
+      "Volunteer teachers"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 45,
+    "question": "Learn English at Sunshine Language School! \n\n Join our friendly classes and improve your English quickly. We offer courses for all levels: beginner, intermediate, and advanced. Classes are held three times a week in the evening. Our experienced teachers use modern methods to make learning fun. Sign up before July 15th and get a 10% discount! For more information, visit our website or call us at (123) 456-7890. \n\n How can you get more information about the school?",
+    "options": [
+      "Visit their office",
+      "Send an email",
+      "Visit their website or call",
+      "Write a letter"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 46,
+    "question": "What does the woman ask the man to buy?",
+    "options": [
+      "Eggs and juice",
+      "Milk and bread",
+      "Fruit and vegetables",
+      "Meat and rice"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 47,
+    "question": "Where is the train going?",
+    "options": [
+      "Tashkent",
+      "Samarkand",
+      "Bukhara",
+      "Andijan"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 48,
+    "question": "When is the homework due?",
+    "options": [
+      "Monday",
+      "Wednesday",
+      "Friday",
+      "Sunday"
+    ],
+    "correctAnswerIndex": 2
+  },
+  {
+    "id": 49,
+    "question": "When is the museum closed?",
+    "options": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Saturday"
+    ],
+    "correctAnswerIndex": 1
+  },
+  {
+    "id": 50,
+    "question": "What does the woman think about the restaurant?",
+    "options": [
+      "She doesn’t like the food.",
+      "She thinks it’s expensive.",
+      "She likes the food and service.",
+      "She thinks the service is bad."
+    ],
+    "correctAnswerIndex": 2
   }
 ]

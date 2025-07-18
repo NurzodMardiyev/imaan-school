@@ -24,7 +24,7 @@ export const sendToTelegram = async ({ name, phone, score,level, feedback }: Sen
 📞 Tel: ${phone}
 ✅ Ball: ${score}
 🎯 Daraja: ${level}
-📝 40 ta savol bo‘yicha natija:\n${feedback}
+📝 50 ta savol bo‘yicha natija:\n${feedback}
 `;
 
   try {

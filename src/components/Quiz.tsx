@@ -43,10 +43,10 @@ export default function Quiz() {
   const navigate = useNavigate();
 
   function getLevel(score: number) {
-    if (score <= 10) return "Beginner (A1)";
-    if (score <= 20) return "Elementary (A2)";
-    if (score <= 30) return "Pre-Intermediate (B1-)";
-    if (score <= 35) return "Intermediate (B1)";
+    if (score <= 12) return "Beginner (A1)";
+    if (score <= 23) return "Elementary (A2)";
+    if (score <= 33) return "Pre-Intermediate (B1-)";
+    if (score <= 45) return "Intermediate (B1)";
     return "Upper-Intermediate (B2)";
   }
 
@@ -60,7 +60,7 @@ export default function Quiz() {
     // Tasodifiy 40ta savolni tanlab olish
     const selected = [...questionsData]
       .sort(() => 0.5 - Math.random())
-      .slice(0, 40)
+      .slice(0, 50)
       .map((q: Question) => {
         const options = [...q.options];
         const correct = options[q.correctAnswerIndex];
@@ -188,7 +188,7 @@ export default function Quiz() {
         </div>
 
         <h3 className="text-xl font-semibold flex justify-between items-center">
-          <span>
+          <span style={{ whiteSpace: "pre-line" }}>
             {currentIndex + 1}. {current.question}
           </span>
           <span className="text-[#ff0000] md:text-xl text-lg font-bold">
