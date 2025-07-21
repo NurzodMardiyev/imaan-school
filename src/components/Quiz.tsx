@@ -80,6 +80,7 @@ export default function Quiz() {
 
   useEffect(() => {
     const level = getLevel(score);
+
     if (user && showResult && !hasSentResult) {
       const feedbackText = answerFeedback
         .map((f, index) => {
@@ -92,10 +93,11 @@ export default function Quiz() {
       sendToTelegram({
         name: user.name,
         phone: user.phone,
-        score: score,
-        level: level,
+        score,
+        level,
         feedback: feedbackText,
       });
+
       setHasSentResult(true);
     }
   }, [user, showResult, hasSentResult, score, answerFeedback]);
