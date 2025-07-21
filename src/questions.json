@@ -493,7 +493,7 @@
   },
   {
     "id": 46,
-    "question": "What does the woman ask the man to buy?",
+    "question": "Conversation: A man says, “I’m going to the supermarket. Do you need anything?” The woman replies, “Yes, please buy some milk and bread.” \n\nWhat does the woman ask the man to buy?",
     "options": [
       "Eggs and juice",
       "Milk and bread",
@@ -504,7 +504,7 @@
   },
   {
     "id": 47,
-    "question": "Where is the train going?",
+    "question": "Announcement: “Attention, passengers. The train to Bukhara will leave from platform 3 in 10 minutes.” \n\nWhere is the train going?",
     "options": [
       "Tashkent",
       "Samarkand",
@@ -515,7 +515,7 @@
   },
   {
     "id": 48,
-    "question": "When is the homework due?",
+    "question": "Conversation: A student asks, “When is the homework due?” The teacher replies, “It’s due on Friday.”\n\nWhen is the homework due?",
     "options": [
       "Monday",
       "Wednesday",
@@ -526,7 +526,7 @@
   },
   {
     "id": 49,
-    "question": "When is the museum closed?",
+    "question": "Announcement: “The museum is open from 9 a.m. to 5 p.m. every day except Monday.”\n\nWhen is the museum closed?",
     "options": [
       "Sunday",
       "Monday",
@@ -537,7 +537,7 @@
   },
   {
     "id": 50,
-    "question": "What does the woman think about the restaurant?",
+    "question": "Conversation: A woman says, “I love this restaurant. The food is delicious, and the service is great!”\n\nWhat does the woman think about the restaurant?",
     "options": [
       "She doesn’t like the food.",
       "She thinks it’s expensive.",
